@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Cafeteria",
+        "Telefone": "2222-222"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.5946478843689,
+          -25.430194754275412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nandeva",
+        "Telefone": "111-111"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.593682289123535,
+          -25.430737354396253
+        ]
+      }
+    }
+  ]
+}

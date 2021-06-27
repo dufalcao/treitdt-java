@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>TreITDT - Sistema de Localização Inteligente</title>
+
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- Leaflet's CSS -->
+
+<link rel="stylesheet"
+	href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+	crossorigin="" />
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	crossorigin=""></script>
+
+
+<link href="css/style.css" rel="stylesheet">
+
+<!-- <script src="js/area_geojson"></script> -->
+</head>
+<body>
+
+	<div class="container">
+
+		<div th:replace="~{base :: menu}"></div>
+
+		<!-- Exibe mapa -->
+		<div class="img-fluid" id="map"></div>
+		
+		<!-- Carrega o arquivo geoJson no mapa -->
+		<input type="hidden" id="area_geojson" value="/localizacoes">
+		
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/mapa.js"></script>
+		
+	<!-- Fim container -->
+	</div>
+	
+</body>
+</html>
+

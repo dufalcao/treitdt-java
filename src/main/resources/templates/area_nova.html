@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>TreITDT - Sistema de Localização Inteligente</title>
+		
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+</head>
+
+<body>
+	<div class = "container">
+	
+		<div th:replace="~{base :: menu}"></div>
+	
+		<div class="jumbotron jumbotron-fluid mb-0">
+			<h1 class="display-4">Adicionar Área</h1>
+		</div>
+		
+		<div class="card">
+		
+			<form th:object="${requisicaoNovaArea}" class="card-body" action="/area/incluir" method="POST">
+				<div class="form-group">
+					<label for="sigla">Sigla</label>
+					<input th:field="*{sigla}" th:errorclass="is-invalid" class="form-control" placeholder="Sigla da Área"/>
+					<small class="form-text text-muted">Informe a Sigla da Área</small>
+					<div class="invalid-feedback" th:errors="*{sigla}">
+						Erro
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="nome">Nome</label>
+					<input th:field="*{nome}" th:errorclass="is-invalid" class="form-control" placeholder="Nome da Área"/>
+					<small class="form-text text-muted">Informe o Nome da Área</small>
+					<div class="invalid-feedback" th:errors="*{nome}">
+						Erro
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="telefone">Telefone</label>
+					<input th:field="*{telefone}" class="form-control" placeholder="Telefone"/>
+					<small class="form-text text-muted">Informe o Telefone da Área</small>
+				</div>
+				<div class="form-group">
+					<label for="desc_referenciada">Descrição Referenciada</label>
+					<textarea th:field="*{desc_referenciada}" class="form-control" placeholder="Descrição Referenciada"></textarea>
+					<small class="form-text text-muted">Informe uma descrição referenciada para a Área</small>
+				</div>
+				<div class="form-group">
+					<label for="desc_especialidades">Descrição Especialidades</label>
+					<textarea th:field="*{desc_especialidades}" class="form-control" placeholder="Descrição Especialidades"></textarea>
+					<small class="form-text text-muted">Informe ma descrição de especialidades para a Área</small>
+				</div>
+<!-- 				<div class="form-group"> -->
+<!-- 					<label for="lat">Latitude</label> -->
+<!-- 					<input th:field="*{lat}" class="form-control" placeholder="Latitude"/> -->
+<!-- 					<small class="form-text text-muted">Informe a latitude</small> -->
+<!-- 				</div> -->
+<!-- 				<div class="form-group"> -->
+<!-- 					<label for="lat">Longitude</label> -->
+<!-- 					<input th:field="*{lng}" class="form-control" placeholder="Longitude"/> -->
+<!-- 					<small class="form-text text-muted">Informe a longitude</small> -->
+<!-- 				</div> -->
+<!-- 				<div class="form-group"> -->
+<!-- 					<label for="geom">Geom</label> -->
+<!-- 					<input th:field="*{geom}" class="form-control" placeholder="Localização"/> -->
+<!-- 					<small class="form-text text-muted">Informe a latitude e longitude</small> -->
+<!-- 				</div> -->
+				<a href="/area" class="btn btn-info">Cancelar</a>
+				<button class="btn btn-primary" type="submit">Adicionar</button>
+				
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+

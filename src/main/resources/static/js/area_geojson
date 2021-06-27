@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "nome": "Café Java",
+        "endereco": "Rua 66, n 100",
+        "telefone": "11 9 8888 8888",
+        "email": "contato@cafejava.com.br",
+        "popupContent": "qq coisa!"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.594647,
+          -25.430194
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "nome": "PTI",
+        "popupContent": "This is where the Rockies play!"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.594181,
+          -25.431820
+        ]
+      }
+    }
+  ]
+}
