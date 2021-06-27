@@ -93,8 +93,10 @@ public Double getLatitude() {
 		area.setTelefone(telefone);
 		area.setDesc_referenciada(desc_referenciada);
 		area.setDesc_especialidades(desc_especialidades);
-		area.setLatitude(-54.594647);
-		area.setLongitude(-25.430194);
+//		area.setLatitude(-54.594647);
+//		area.setLongitude(-25.430194);
+		area.setLatitude(latitude);
+		area.setLongitude(longitude);
 		area.setPopupContent("Nome: <b>" + area.getNome()+"</b>");
 //		area.setGeom(geom);
 		return area;
