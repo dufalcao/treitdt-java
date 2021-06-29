@@ -104,6 +104,7 @@ public class AreaResource {
 		String popupContent = "";
 		
 		for(Area area : areas) {
+			area.setPopupContent("Nome: <b>" + area.getNome()+"</b>" + "<br>Tel:" + area.getTelefone());
 			List<Double> point = new ArrayList<>();
 			point.add(area.getLatitude());
 			point.add(area.getLongitude());

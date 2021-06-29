@@ -17,31 +17,27 @@ public class RequisicaoNovaArea {
 	@NotBlank
 	private String nome;
 	
+	@NotBlank
 	private String desc_referenciada;
+	
+	@NotBlank
 	private String desc_especialidades;
+	
+	@NotBlank
 	private String telefone;
+	
+	@NotBlank
 	private Double latitude;
+	
+	@NotBlank
 	private Double longitude;
 //	private PGgeography geom;
-	
-//	public Double getLat() {
-//		return lat;
-//	}
-//	public void setLat(Double lat) {
-//		this.lat = lat;
-//	}
-//	public Double getLng() {
-//		return lng;
-//	}
-//	public void setLng(Double lng) {
-//		this.lng = lng;
-//	}
 	
 	
 	public String getSigla() {
 		return sigla;
 	}
-public Double getLatitude() {
+	public Double getLatitude() {
 		return latitude;
 	}
 	public void setLatitude(Double latitude) {
