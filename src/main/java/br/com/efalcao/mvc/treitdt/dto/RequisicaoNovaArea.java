@@ -26,10 +26,10 @@ public class RequisicaoNovaArea {
 	@NotBlank
 	private String telefone;
 	
-	@NotBlank
+	
 	private Double latitude;
 	
-	@NotBlank
+	
 	private Double longitude;
 //	private PGgeography geom;
 	
