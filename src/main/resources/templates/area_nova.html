@@ -59,7 +59,7 @@
 				</div>
 				<div class="form-group">
 					<label for="telefone">Telefone</label>
-					<input th:field="*{telefone}" th:errorclass="is-invalid" class="form-control" placeholder="Telefone" type="tel" id="telefone" name="telefone" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}" />
+					<input th:field="*{telefone}" th:errorclass="is-invalid" class="form-control" placeholder="(99) 99999-9999" type="text" id="telefone" name="telefone" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}" />
 					<small class="form-text text-muted">Informe o Telefone da Área</small>
 					<div class="invalid-feedback" th:errors="*{telefone}">
 						Erro
@@ -111,14 +111,14 @@
 <!-- 					<small class="form-text text-muted">Informe a latitude e longitude</small> -->
 <!-- 				</div> -->
 				<a href="/area" class="btn btn-info">Cancelar</a>
-				<button class="btn btn-primary" type="submit">Adicionar</button>
+				<button class="btn btn-primary" id="btnAdd" type="submit" disabled>Adicionar</button>
 				
 			</form>
-			<div id="map">mapa </div>
+			<div id="mapsection">mapa </div>
 			
 		</div>
 		<script src="../js/jquery-3.6.0.min.js"></script>
-	<script src="../js/mapa.js"></script>
+	<script src="../js/mapaNovaArea.js"></script>
 	</div>
 	
 	

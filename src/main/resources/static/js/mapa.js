@@ -113,19 +113,3 @@ var overlays = {
 L.control.layers(baseLayers, overlays).addTo(map);
 //L.control.layers(baseLayers).addTo(map);
 myPoint();
-
-
-//var popup = L.popup();
-
-function onMapClick(e) {
-    alert("You clicked the map at " + e.latlng.toString());
-//    let latlong = document.getElementById('latlng');
-    let lat = document.getElementById('lat');
-    let lng = document.getElementById('lng');
-
-//    latlong.innerHTML = e.latlng;
-    lat.value = e.latlng.lat;
-    lng.value = e.latlng.lng;
-}
-
-map.on('click', onMapClick);
